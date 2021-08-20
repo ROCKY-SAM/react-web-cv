@@ -1,13 +1,219 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:10px;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Courier';
+  background-color: #dadee7;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 35%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.column-card-social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.column-card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translateX(-5px);
+  /* height: 47%; */
+  width: 100%;
+  transition: 10s ease;
+}
+
+
+.column-card-kb{
+  position: relative;
+  top: -50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translateX(-5px);
+  /* height: 47%; */
+  width: 100%;
+  transition: 10s ease;
+}
+
+.card-bio{
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translateX(-5px);
+}
+.card-last-row{
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 8px;
+  margin: 2px;
+  /* width: 25%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translateX(-5px);
+}
+ 
+.card-last-row p{
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.userDataName{
+font-size: 18px;
+font-weight: bold;
+background-color: inherit;
+}
+.userDataJobTitle{
+  font-size: 16px;
+  background-color: inherit;
+  color: #a0a0a0
+}
+.bodyText{
+background-color: inherit;
+font-size: 18px;
+padding: 10px;
+
+}
+b{
+  font-size: 20px;
+  background-color: inherit;
+}
+
+.propic{
+  width: 55%;
+  border-radius: 18px;
+  transition: 2s ease;
+}
+
+.image-card{
+  background-color: white;
+  border-radius: 25px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+  transform: translateX(-5px);
+}
+.propic:hover{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+  
+.card-last-row:hover{
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+
+.socialIcon{
+  background-color: white !important;
+}
+
+
+/* ----------- */
+.accordion {
+ width: 100%;
+background-color: inherit;
+
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #dadee7;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border-radius: 25px;
+  font-style: italic;
+}
+.accordion-title  div{
+  background-color: inherit;
+}
+
+.accordion-item{
+  background-color: inherit;
+  /* padding: 3px; */
+  margin: 5px;
+}
+
+.accordion-title:hover {
+  /* background-color: #3ab4cc; */
+
+}
+
+.accordion-title,
+.accordion-content {
+  /* padding: 1rem; */
+
+
+}
+
+.accordion-content {
+  background-color: white;
+  animation-name: fadeIn;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  will-change: opacity;
+  width: 90%;
+  padding-left:20px;
+ 
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
 }
