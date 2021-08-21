@@ -9,9 +9,11 @@ const Accordion = ({ title, content }) => {
         <div>{title}</div>
         <div>{isActive ? '-' : '+'}</div>
       </div>
-      {isActive && <div className="accordion-content">{content}</div>}
+      {isActive && <div className="accordion-content" dangerouslySetInnerHTML= {{ __html:content }}></div>}
     </div>
   );
 };
 
 export default Accordion;
+
+
