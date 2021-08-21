@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="row">
-        <div className="column">
+        <div className="column col-4">
           <div className="column-card">
             <p className="userDataName">S.M Abeysekara</p>
             <p className="userDataJobTitle">Software Engineer</p>
@@ -39,17 +39,17 @@ function App() {
               url="https://github.com/ROCKY-SAM" size="60" />
           </div>
         </div>
-        <div className="image-card">
+        <div className="image-card colImg-size">
           <img src={propic} className="propic"></img>
         </div>
-        <div className="card-bio">
+        <div className="card-bio col-5">
           <b>Hey, I’m Sam</b>
           <p className="bodyText">Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. Well-versed in technology and writing code to create systems that are reliable and user-friendly.
           </p>
         </div>
       </div>
       <div className="row">
-        <div className="column">
+        <div className="column col-4">
           <div className="column-card-kb">
             <b>Knowledge Background</b>
             <div className="accordion">
@@ -59,7 +59,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="column">
+        <div className="column col-4">
           <div className="card-last-row"><p>#Angular</p></div>
           <div className="card-last-row"><p>#React</p></div>
           <div className="card-last-row"><p>#PHP</p></div>
