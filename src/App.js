@@ -59,7 +59,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="column col-4">
+        <div className="column col-5">
           <div className="card-last-row"><p>#Angular</p></div>
           <div className="card-last-row"><p>#React</p></div>
           <div className="card-last-row"><p>#PHP</p></div>
