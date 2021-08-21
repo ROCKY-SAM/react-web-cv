@@ -31,6 +31,10 @@
   .column-card-kb{
     top: -10px !important
   }
+  .column-card-social{
+    position: relative;
+    left: -20px;
+  }
 }
 
 
