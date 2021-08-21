@@ -3,7 +3,7 @@
   padding:0;
   box-sizing: border-box;
   font-family: 'Courier';
-  background-color: #dadee7;
+  background-color: #f94a72;
 }
 
 /* For desktop: */
@@ -85,6 +85,10 @@
   width: 100%;
   transition: 10s ease;
 }
+.column-card-kb b{
+  background-color: white;
+  font-size: 22px;
+}
 .card-bio{
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
@@ -127,11 +131,11 @@ background-color: inherit;
 }
 .bodyText{
 background-color: inherit;
-font-size: 18px;
+font-size: 16px;
 padding: 10px;
 }
-b{
-  font-size: 20px;
+.bodyText b{
+  font-size: 19px;
   background-color: inherit;
 }
 

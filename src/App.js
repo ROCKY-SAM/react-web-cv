@@ -43,9 +43,16 @@ function App() {
           <img src={propic} className="propic"></img>
         </div>
         <div className="card-bio col-5">
-          <b>Hey, I’m Sam</b>
-          <p className="bodyText">Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. Well-versed in technology and writing code to create systems that are reliable and user-friendly.
-          </p>
+          {/* <b>Hey, I’m Sam</b> */}
+          <p className="bodyText">
+            <b>I’m living the dream.</b>
+            <hr></hr>
+            I’ve always been a great problem solver, an independent introvert, and a technophile obsessed with the latest devices.
+            Today, I’m working from home as a software engineer for <b>BoardPAC (Pvt) Ltd</b>, and I am getting into <b>Amazon Web Services</b> on my own time.
+            <br></br>
+            <br></br>
+            Familiar with a variety of programming languages, including JavaScript, Python and React, but I’m always adding new skills to my repertoire. I’m also eager to meet other software engineers in the area, so feel free to connect!
+            </p>
         </div>
       </div>
       <div className="row">
